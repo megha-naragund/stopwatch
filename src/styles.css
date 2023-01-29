@@ -16,7 +16,7 @@ body > div {
   justify-content: center;
   font-weight: bold;
 }
-/* timer display style */
+/* display style of timer */
 .timerDisplay {
   height: 10vh;
   width: 30vw;
