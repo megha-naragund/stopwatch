@@ -45,6 +45,7 @@ function stopWatchTimer() {
   timerId = setInterval(function () {
     sec = sec + 1;
     secStr = sec;
+    //if sec is single digit, add 0 infront
     if (sec < 10) {
       secStr = "0" + sec;
     }
