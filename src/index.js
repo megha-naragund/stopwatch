@@ -1,4 +1,4 @@
-import "./styles.css";
+// import "./styles.css";
 // fetch the buttons by id
 let start = document.querySelector("#start");
 let stop = document.querySelector("#stop");
