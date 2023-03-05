@@ -3,11 +3,25 @@
   <head>
     <title>Stopwatch</title>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- <link rel="stylesheet" href="src/styles.css" /> -->
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
 
   <body>
@@ -19,28 +33,56 @@
 
       <body>
         <!-- container -->
-        <div id="stopWatch">
-          <h1>
-            StopWatch
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1571/1571668.png"
-              width="30"
-              height="30"
-            />
-          </h1>
+        <div
+          id="stopWatch"
+          class="container"
+          style="
+            /* width: 25rem;
+            height: 25rem; */
+            background-color: rgb(17, 25, 51);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 1rem;
+            /* margin: auto; */
+          "
+        >
+          <div class="row mt-2 p-4">
+            <h1 class="text-center">
+              StopWatch
+              <!-- <img
+                src="https://cdn-icons-png.flaticon.com/512/1571/1571668.png"
+                width="25rem"
+                height="25rem"
+              /> -->
+              <i class="bi bi-stopwatch-fill"></i>
+            </h1>
+          </div>
           <!-- timer display container -->
-          <div class="timerDisplay">
-            <div id="hr">00</div>
-            <div>:</div>
-            <div id="min">00</div>
-            <div>:</div>
-            <div id="sec">00</div>
+          <div class="container m-4 p-4" style="color: white;">
+            <div class="row">
+              <div class="col" id="hr">00</div>
+              <div class="col">:</div>
+              <div id="min" class="col">00</div>
+              <div class="col">:</div>
+              <div id="sec" class="col">00</div>
+            </div>
           </div>
           <!-- buttons -->
-          <div class="buttons">
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
-            <button id="reset">Reset</button>
+          <div class="buttons container m-4 p-4">
+            <div class="row">
+              <div class="col">
+                <button id="start" class="btn btn-success m-2">Start</button>
+              </div>
+              <div class="col">
+                <button id="stop" class="btn btn-danger m-2">Stop</button>
+              </div>
+              <div class="col">
+                <button id="reset" class="btn btn-primary m-2">Reset</button>
+              </div>
+            </div>
           </div>
         </div>
       </body>
